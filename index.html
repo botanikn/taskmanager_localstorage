@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html id="html">
+    <head>
+        <title>To Do List</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <main>
+            <div id="greeting">
+                <h3>Привет, <input type="text" id="gret"></h3>
+            </div>
+            <div id="create_task">
+                
+                <div id="text">
+                    <div id="text_head">
+                        <p>СОЗДАТЬ ЗАДАЧУ</p>
+                        <p class="bold">Введите текст задачи</p>
+                    </div>
+                    <div id="text_body">
+                            <input type="text" name="text" id="value" placeholder="Введите текст задачи">
+                    </div>
+                </div>
+                <div id="category">
+                    
+                    <div id="categoty_head">
+                        <p class="bold">Выберите категорию</p>
+                    </div>
+                    <div id="category_body">
+                        <div id="work">
+                            <center><input type="radio" id="big_work" name="category" onclick="w()"><label for="big_work" id="large"><p class="label">Работа</p></label></center>
+                        </div>
+                        <div id="personal">
+                            <center><input type="radio" id="big_personal" name="category" onclick="p()"><label for="big_personal"><p class="label">Личное</p></label></center>
+                        </div>
+                        
+
+                    </div>
+
+                    <div id="button">
+                        
+                            <input type="button" id="todo" name="button" value="ДОБАВИТЬ TODO" onclick="add()">
+                        
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="task_list">
+                <div id="head">
+                    <div id="task_head">
+                        <p>Список дел</p>
+                    </div>
+                    <div id="delete_all">
+
+                        <input type="button" id="del_all" value="Удалить всё" onclick="del_all()">
+                        
+                    </div>
+
+                </div>
+                <div id="body">
+
+                </div>
+
+            </div>
+        </main>
+        <script src="generate.js"></script>
+        <script src="code.js"></script>
+    </body>
+</html>
